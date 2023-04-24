@@ -57,5 +57,4 @@ public class PhoneApi extends ApiBase {
         response = getRequestWithParam(endpoint, code, "id", phoneId);
         return response;
     }
-
 }

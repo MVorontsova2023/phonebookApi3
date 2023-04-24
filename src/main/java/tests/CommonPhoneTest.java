@@ -26,4 +26,5 @@ public class CommonPhoneTest extends PhoneApi {
         Response errorMessage = getPhone(500, phoneId);
         Assert.assertEquals(errorMessage.jsonPath().getString("message"), "Error! This phone number doesn't exist in our DB");
     }
+
 }

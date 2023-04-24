@@ -51,4 +51,5 @@ public class ContactApi extends ApiBase {
         response.as(ContactDto.class);
         return response;
     }
+
 }

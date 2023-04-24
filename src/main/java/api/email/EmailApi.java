@@ -52,10 +52,4 @@ public class EmailApi extends ApiBase {
         return response;
     }
 
-//    public Response getAllEmails(Integer code) {
-//        String endpoint = "/api/email/4909/all";
-//        response = getRequest(endpoint, code);
-//        return response;
-//    }
-
 }
