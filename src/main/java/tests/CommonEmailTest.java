@@ -1,11 +1,14 @@
 package tests;
 
+import api.ApiBase;
 import api.email.EmailApi;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class CommonEmailTest extends EmailApi {
+   // EmailApi emailApi = new EmailApi();
+    Integer contact = 4909;
 
     @Test
     public void createEditDeleteContactEmailTest() {
@@ -24,4 +27,5 @@ public class CommonEmailTest extends EmailApi {
         Response errorMessage = getEmail(500, emailId);
         Assert.assertEquals(errorMessage.jsonPath().getString("message"), "Error! This email doesn't exist in our DB");
     }
+
 }

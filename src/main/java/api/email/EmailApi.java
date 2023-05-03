@@ -51,5 +51,4 @@ public class EmailApi extends ApiBase {
         response = getRequestWithParam(endpoint, code, "id", emailId);
         return response;
     }
-
 }

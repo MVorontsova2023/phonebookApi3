@@ -31,8 +31,7 @@ public class ContactApi extends ApiBase {
     public Response createContact(Integer code) {
         String endpoint = "/api/contact";
         response = postRequest(endpoint, code, randomDataBodyForCreateContact());
-        response.as(ContactDto.class);
-        return response;
+                return response;
     }
 
     public void editExistingContact(Integer code, Integer contactId) {
@@ -51,5 +50,4 @@ public class ContactApi extends ApiBase {
         response.as(ContactDto.class);
         return response;
     }
-
 }
